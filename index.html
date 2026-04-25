@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── PRIMARY SEO ─────────────────────────────────── -->
+  <title>Nazmus Sakib Sami — Video Editor & Graphics Designer | Dhaka, Bangladesh</title>
+  <meta name="description" content="Nazmus Sakib Sami is a creative Video Editor, Graphics Designer and Motion Graphics specialist based in Dhaka, Bangladesh. Specializing in branding, social media visuals, and impactful digital content creation." />
+  <meta name="keywords" content="Nazmus Sakib Sami, nzs_sami, Video Editor, Graphics Designer, Motion Graphics, Content Editor, Dhaka, Bangladesh, Branding, Social Media Design, Adobe Photoshop, After Effects" />
+  <meta name="author" content="Nazmus Sakib Sami" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#00FF88" />
+  <link rel="canonical" href="https://nzsami.netlify.app" />
+
+  <!-- ── OPEN GRAPH (Facebook, WhatsApp, Telegram preview) ── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nazmus Sakib Sami — Video Editor & Graphics Designer" />
+  <meta property="og:description" content="Creative Video Editor and Graphics Designer specializing in modern digital media, branding, social media visuals, and impactful content creation." />
+  <meta property="og:image" content="https://nzsami.netlify.app/images/self.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://nzsami.netlify.app" />
+  <meta property="og:site_name" content="Nazmus Sakib Sami" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ── TWITTER CARD ────────────────────────────────── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nazmus Sakib Sami — Video Editor & Graphics Designer" />
+  <meta name="twitter:description" content="Creative Video Editor and Graphics Designer based in Dhaka, Bangladesh." />
+  <meta name="twitter:image" content="https://nzsami.netlify.app/images/self.png" />
+  <meta name="twitter:site" content="@nzsakibsami" />
+  <meta name="twitter:creator" content="@nzsakibsami" />
+
+  <!-- ── FAVICON ─────────────────────────────────────── -->
+  <link rel="icon" type="image/png" href="images/self.png" />
+  <link rel="apple-touch-icon" href="images/self.png" />
+
+  <!-- ── STRUCTURED DATA — Person Schema (Google) ───── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nazmus Sakib Sami",
+    "alternateName": "nzs_sami",
+    "jobTitle": "Video Editor & Graphics Designer",
+    "description": "Creative Video Editor and Graphics Designer specializing in modern digital media, branding, social media visuals, and motion graphics.",
+    "url": "https://nzsami.netlify.app",
+    "image": "https://nzsami.netlify.app/images/self.png",
+    "email": "nsakib.sami@gmail.com",
+    "telephone": "+8809658036993",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dhaka",
+      "addressCountry": "BD"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Dhaka Songjog"
+    },
+    "knowsAbout": [
+      "Video Editing",
+      "Graphics Design",
+      "Motion Graphics",
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "After Effects",
+      "Canva",
+      "Branding",
+      "Social Media Marketing"
+    ],
+    "sameAs": [
+      "https://www.facebook.com/nzsakib.sami/",
+      "https://www.instagram.com/nzsakib.sami/",
+      "https://x.com/nzsakibsami",
+      "https://www.linkedin.com/in/nzssami/",
+      "https://www.behance.net/nzsakibsami"
+    ]
+  }
+  </script>
+
+  <!-- ── FONTS ───────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
+  <!-- ── STYLESHEET ──────────────────────────────────── -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-ring"></div>
+      <div class="preloader-ring ring2"></div>
+      <div class="preloader-ring ring3"></div>
+      <div class="preloader-text">INITIALIZING<span class="preloader-dots">...</span></div>
+    </div>
+  </div>
+
+  <!-- ANIMATED BACKGROUND CANVAS -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- FLOATING ORBS -->
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+
+  <!-- SCANLINES OVERLAY -->
+  <div class="scanlines"></div>
+
+  <!-- MAIN WRAPPER -->
+  <div id="app" class="hidden">
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section id="hero">
+      <div class="hero-inner">
+
+        <!-- AVATAR -->
+        <div class="avatar-wrap" data-reveal>
+          <div class="avatar-ring-outer"></div>
+          <div class="avatar-ring-inner"></div>
+          <img src="images/self.png" alt="Nazmus Sakib Sami — Video Editor and Graphics Designer from Dhaka Bangladesh" class="avatar-img" />
+          <div class="verified-badge">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9S3 16.97 3 12 7.03 3 12 3s9 4.03 9 9z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+
+        <!-- NAME & TITLE -->
+        <div class="hero-text" data-reveal data-delay="100">
+          <p class="hero-handle">@nzs_sami</p>
+          <h1 class="hero-name">NAZMUS SAKIB SAMI</h1>
+          <div class="hero-title-wrap">
+            <span class="title-prefix">///</span>
+            <span id="typed-title" class="typed-title"></span>
+            <span class="cursor-blink">|</span>
+          </div>
+        </div>
+
+        <!-- BIO GLASS CARD -->
+        <div class="bio-card glass-card" data-reveal data-delay="200">
+          <p>A creative graphic designer and content editor specializing in modern digital media. Focused on branding, social media visuals, and impactful content creation.</p>
+        </div>
+
+        <!-- CTA BUTTONS -->
+        <div class="hero-actions" data-reveal data-delay="300">
+          <button class="btn-primary" id="save-contact-btn" aria-label="Save Contact as vCard">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 16v-8M8 12l4 4 4-4M3 17v2a2 2 0 002 2h14a2 2 0 002-2v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Save Contact
+          </button>
+          <button class="btn-secondary" id="qr-btn" aria-label="Open QR Code">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="2"/><path d="M14 14h2v2h-2zM18 14h3v3h-3zM14 18h3v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Scan QR
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT INFO ═══════════════ -->
+    <section id="contact-info" class="section-block" aria-label="Contact Information">
+      <div class="section-label" data-reveal><span>01</span> Contact</div>
+      <div class="contact-grid">
+
+        <a href="tel:+8809658036993" class="contact-item glass-card" data-reveal aria-label="Call Nazmus Sakib Sami">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.78 19.79 19.79 0 01.02 1.14 2 2 0 012 .02h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="contact-details">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+8809658036993</span>
+          </div>
+          <div class="contact-arrow">→</div>
+        </a>
+
+        <a href="mailto:nsakib.sami@gmail.com" class="contact-item glass-card" data-reveal data-delay="50" aria-label="Email Nazmus Sakib Sami">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="currentColor" stroke-width="2"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="contact-details">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">nsakib.sami@gmail.com</span>
+          </div>
+          <div class="contact-arrow">→</div>
+        </a>
+
+        <a href="https://nzsami.netlify.app" class="contact-item glass-card" data-reveal data-delay="100" aria-label="Visit Website nzsami.netlify.app">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10A15.3 15.3 0 0112 2z" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="contact-details">
+            <span class="contact-label">Website</span>
+            <span class="contact-value">nzsami.netlify.app</span>
+          </div>
+          <div class="contact-arrow">→</div>
+        </a>
+
+        <a href="https://maps.google.com/?q=Dhaka,Bangladesh" target="_blank" rel="noopener" class="contact-item glass-card" data-reveal data-delay="150" aria-label="Location Dhaka Bangladesh">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="contact-details">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Dhaka, Bangladesh</span>
+          </div>
+          <div class="contact-arrow">→</div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════ SOCIAL LINKS ═══════════════ -->
+    <section id="socials" class="section-block" aria-label="Social Media Networks">
+      <div class="section-label" data-reveal><span>02</span> Networks</div>
+      <div class="socials-grid" data-reveal data-delay="100">
+
+        <a href="https://www.facebook.com/nzsakib.sami/" target="_blank" rel="noopener noreferrer" class="social-btn" data-platform="facebook" title="Nazmus Sakib Sami on Facebook" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="2"/></svg>
+          <span>Facebook</span>
+        </a>
+
+        <a href="https://www.instagram.com/nzsakib.sami/" target="_blank" rel="noopener noreferrer" class="social-btn" data-platform="instagram" title="Nazmus Sakib Sami on Instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          <span>Instagram</span>
+        </a>
+
+        <a href="https://wa.me/message/GWAMVZ4OLE2PI1" target="_blank" rel="noopener noreferrer" class="social-btn" data-platform="whatsapp" title="Chat with Nazmus Sakib Sami on WhatsApp" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="currentColor" stroke-width="2"/></svg>
+          <span>WhatsApp</span>
+        </a>
+
+        <a href="https://x.com/nzsakibsami" target="_blank" rel="noopener noreferrer" class="social-btn" data-platform="twitter" title="Nazmus Sakib Sami on X" aria-label="X Twitter">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 4l16 16M20 4L4 20" stroke="currentColor" stroke-width="2"/></svg>
+          <span>X</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/nzssami/" target="_blank" rel="noopener noreferrer" class="social-btn" data-platform="linkedin" title="Nazmus Sakib Sami on LinkedIn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v6h-4v-6a2 2 0 10-4 0v6h-4v-12h4v2" stroke="currentColor" stroke-width="2"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/></svg>
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="https://www.behance.net/nzsakibsami" target="_blank" rel="noopener noreferrer" class="social-btn" data-platform="behance" title="Nazmus Sakib Sami on Behance" aria-label="Behance">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M3 7h6a3 3 0 010 6H3zM3 13h6a3 3 0 010 6H3zM15 10h6M15 14h6M15 18h6" stroke="currentColor" stroke-width="2"/></svg>
+          <span>Behance</span>
+        </a>
+
+        <a href="#" class="social-btn" data-platform="pinterest" title="Pinterest" aria-label="Pinterest">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.78 1.22-5.17 1.22-5.17s-.31-.62-.31-1.54c0-1.45.84-2.53 1.88-2.53.88 0 1.31.66 1.31 1.46 0 .89-.57 2.23-.86 3.47-.24 1.03.51 1.88 1.52 1.88 1.82 0 3.23-1.92 3.23-4.69 0-2.45-1.76-4.16-4.28-4.16-2.91 0-4.62 2.18-4.62 4.44 0 .88.34 1.82.76 2.34.08.1.09.19.07.29-.08.31-.25 1.03-.28 1.17-.04.19-.14.23-.32.14-1.25-.58-2.03-2.42-2.03-3.89 0-3.15 2.29-6.05 6.61-6.05 3.47 0 6.16 2.47 6.16 5.77 0 3.44-2.17 6.21-5.18 6.21-1.01 0-1.97-.53-2.29-1.15l-.62 2.31c-.22.87-.83 1.96-1.24 2.62.94.29 1.93.44 2.95.44 5.52 0 10-4.48 10-10S17.52 2 12 2z" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span>Pinterest</span>
+        </a>
+
+        <a href="#" class="social-btn" data-platform="dribbble" title="Dribbble" aria-label="Dribbble">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72M2.88 10.08c5.37-1.68 9.15-.8 14.14 1.41M15.41 2.5c-1.1 6.98-5.35 11.48-9.85 14.6" stroke="currentColor" stroke-width="2"/></svg>
+          <span>Dribbble</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════ CAREER TIMELINE ═══════════════ -->
+    <section id="career" class="section-block" aria-label="Career Timeline">
+      <div class="section-label" data-reveal><span>03</span> Career</div>
+
+      <div class="timeline">
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-line"></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-header">
+              <div class="tl-title-wrap">
+                <h3 class="tl-role">Content Editor & Graphics Designer</h3>
+                <p class="tl-company">Dhaka Songjog</p>
+              </div>
+              <span class="tl-date">2025 — Present</span>
+            </div>
+            <p class="tl-desc">Responsible for creating visually engaging and informative news content that maintains brand consistency across digital platforms. Work closely with the editorial team to design compelling graphics, edit content for clarity and accuracy, and ensure each publication aligns with the platform's professional and modern news identity.</p>
+            <div class="tl-tags">
+              <span>Multimedia Report</span><span>Graphics Design</span><span>News Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal data-delay="100">
+          <div class="timeline-line"></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-header">
+              <div class="tl-title-wrap">
+                <h3 class="tl-role">Graphics Designer & Motion Graphics</h3>
+                <p class="tl-company">Self Employed</p>
+              </div>
+              <span class="tl-date">2023 — Present</span>
+            </div>
+            <p class="tl-desc">Create visually compelling designs and dynamic animations for digital platforms. Specialize in branding, social media content, and motion visuals, delivering creative solutions that combine strong design principles with engaging storytelling.</p>
+            <div class="tl-tags">
+              <span>Adobe Photoshop</span><span>Adobe Illustrator</span><span>After Effect</span><span>Canva</span><span>AI Tools</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal data-delay="200">
+          <div class="timeline-line"></div>
+          <div class="timeline-card glass-card">
+            <div class="tl-header">
+              <div class="tl-title-wrap">
+                <h3 class="tl-role">Founder & Digital Marketer</h3>
+                <p class="tl-company">Lazybit.Shop</p>
+              </div>
+              <span class="tl-date">2020 — 2022</span>
+            </div>
+            <p class="tl-desc">Managed and operated an online clothing business, handling product sourcing, branding, and digital promotion. Oversaw customer communication, sales management, and content creation to maintain a consistent online presence and drive engagement.</p>
+            <div class="tl-tags">
+              <span>Entrepreneurship</span><span>Brand Management</span><span>Social Media Marketer</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer id="footer">
+      <div class="footer-glow-line"></div>
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 <span>Nazmus Sakib</span>. All systems online.</p>
+        <p class="footer-built">Built by <span>nzss</span></p>
+      </div>
+    </footer>
+
+  </div><!-- /app -->
+
+  <!-- ═══════════════ QR MODAL ═══════════════ -->
+  <div id="qr-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="QR Code to connect with Nazmus Sakib Sami">
+    <div class="modal-box glass-card">
+      <button class="modal-close" id="modal-close" aria-label="Close QR Modal">✕</button>
+      <h3 class="modal-title">Scan to Connect</h3>
+      <div class="qr-frame">
+        <canvas id="qr-canvas" width="180" height="180"></canvas>
+        <div class="qr-corner tl"></div>
+        <div class="qr-corner tr"></div>
+        <div class="qr-corner bl"></div>
+        <div class="qr-corner br"></div>
+      </div>
+      <p class="modal-sub">Point your camera at the code</p>
+      <p class="modal-url">nzsami.netlify.app</p>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" title="Back to top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M18 15l-6-6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
